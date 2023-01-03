@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!--Ejercicio 8-->
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Ejercicio 8</title>
+    </head>
+
+    <body>
+        <h2>Ejercicios de autoevaluaci&oacute;n</h2>
+
+        <p><strong>3.8</strong> <em><strong>(Creaci&oacute;n de un formulario autocomplete con un elemento datalist)</strong></em>. 
+            Cree un elemento <em>input autocomplete</em> con un elemento <em>datalist</em> asociado que contenga los d&iacute;as de la semana.</p>
+
+            <form method = "post" autocomplete = "on">
+                <p><label for = "listaTxt">D&iacute;as:
+                   <input type = "text" id = "listaTxt"
+                      placeholder = "Selecciona el dia" list = "dias" />
+                   <datalist id = "dias">
+                      <option value = "Domingo">
+                      <option value = "Lunes">
+                      <option value = "Martes">
+                      <option value = "Miercoles">
+                      <option value = "Jueves">
+                      <option value = "Viernes">
+                      <option value = "Sabado">
+                   </datalist>
+                </label></p>
+                <p>
+                   <input type = "submit" value = "Enviar">
+                   <input type = "reset" value = "Borrar">
+                </p>
+             </form>
+
+             <input type = "button" onclick="history.back()" name = "Menú" value = "Menú">
+
+    </body>
+</html>
+

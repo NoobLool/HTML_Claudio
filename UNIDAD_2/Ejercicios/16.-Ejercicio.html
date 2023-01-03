@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<!--Ejercicio 16-->
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Ejercicio 16</title>
+    </head>
+
+    <body>
+        <h2>Ejercicios de autoevaluaci&oacute;n</h2>
+
+        <p><strong>2.16</strong> Una universidad local le pidi&oacute; que creara un documento 
+            de HTML5 que permita a los futuros estudiantes universitarios proveer retroalimentaci&oacute;n 
+            sobre su visita al campus. Su documento de HTML5 debe contener un formulario con campos de 
+            texto para un nombre y un correo electr&oacute;nico. Proporcione casillas de verificaci&oacute;n 
+            que permita a los futuros estudiantes indicar lo que les gust&oacute; m&acute;s sobre el campus. 
+            Las casillas de verificaci&oacute;n deben incluir: campus, estudiantes, ubicaci&oacute;n, ambiente, 
+            dormitorios y deportes. Proporcione adem&aacute;s botones de opci&oacute;n que pregunten a los futuros
+            estudiantes c&oacute;mo supieron sobre la universidad. Las opciones deben incluir: amigos, televisi&oacute;n, 
+            Internet y otro. Adem&aacute;s, proporcione un &aacute;rea de texto para comentarios adicionales, un bot&oacute;
+            para enviar y un bot&oacute;n para restablecer. Use post para enviar la informaci&oacute;n en el formulario a 
+            <em>http://www.deitel.com</em>.</p>
+
+            <h1>FORMULARIO DE RETROALIMENTACI&Oacute;N</h1>
+            <p>Ayudanos a saber como fue tu experiencia en el campus.</p>
+      
+            <form action = "http://www.google.com" method = "post">
+               <p>
+                  <input type = "hidden" name = "recipient"
+                     value = "aminukano585@gmail.com">
+                  <input type = "hidden" name = "subject"
+                     value = "BUK Feedback Form">
+                  <input type = "hidden" name = "redirect"
+                     value = "main.html">
+               </p>
+      
+               <p><label>Nombre:
+                     <input name = "nombre" type = "text" size = "25">
+                  </label></p>
+               <p><label>Correo electr&oacute;nico:
+                     <input name = "correo" type = "text" size = "25">
+                  </label></p>
+      
+               <p>
+                  <strong>¿Qu&eacute; fue lo que mas te gust&oacute; del campus?</strong><br>
+      
+                  <label>Campus
+                     <input name = "gustos" type = "checkbox" value = "campus">
+                  </label>
+                  <label>Estudiantes
+                     <input name = "gustos" type = "checkbox" value = "estudiantes">
+                  </label>
+                  <label>Ubicaci&oacute;n
+                     <input name = "gustos" type = "checkbox" value = "ubicacion">
+                  </label>
+                  <label>Ambiente
+                     <input name = "gustos" type = "checkbox" value = "ambiente">
+                  </label>
+                  <label>Dormitorios
+                     <input name = "gustos" type = "checkbox" value = "dormitorios">
+                  </label>
+                  <label>Deportes
+                     <input name = "gustos" type = "checkbox" value = "deportes">
+                  </label>
+               </p>
+      
+               <p>
+                  <strong>¿Com&oacute; te enteraste de esta universidad?</strong><br>
+      
+                  <label>Amigos
+                     <input name = "dato" type = "radio" value = "amigos" checked>
+                  </label>
+                  <label>Televisi&oacute;n
+                     <input name = "dato" type = "radio" value = "television">
+                  </label>
+                  <label>Internet
+                     <input name = "dato" type = "radio" value = "internet">
+                  </label>
+                  <label>Otros
+                     <input name = "dato" type = "radio" value = "otros">
+                  </label>
+               </p>
+      
+               <p><label>Comentarios:<br>
+                     <textarea name = "comentarios" rows = "6" cols = "45"
+                        placeholder = "Ingresa aqui los comentarios que consideres necesarios."></textarea>
+                  </label></p>
+      
+               <p>
+                  <input type = "submit" value = "Enviar">
+                  <input type = "reset" value = "Restablecer">
+               </p>
+            </form>
+            <input type = "button" onclick = "history.back()" name = "Menú" value="Menú">
+    </body>
+</html>

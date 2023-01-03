@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!--Ejercicio 6-->
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Ejercicio 6</title>
+    </head>
+
+    <body>
+        <h2>Ejercicios de autoevaluaci&oacute;n</h2>
+
+        <p><strong>3.6</strong> <em><strong>(Formulario de registro Web con encuensta opcional)</strong></em>. Cree un formulario
+        de registro de un sitio Web para obtener el primer nombre, apellido y direcci&oacute;n de correo de eletr&oacute;nico de un usuario. 
+        Incluye adem&aacute;s una pregunta de encuesta opcional que pida el a&ntilde;o en el que se encuentra el usuario en la universidad (por 
+        ejemplo, primer a&ntilde;o). Coloque la pregunta de encuesta opcional en el elemento <em>details</em> que el usuario puede expandir para 
+        ver la pregunta.</p>
+        
+        <form method="post" autocomplete="on">
+            <p>
+                <label>Nombre:
+                    <input type = "text" id = "nombre"
+                    placeholder = "Ingresa tu nombre">
+                </label>
+            </p>
+
+            <p>
+                <label>Apellido:
+                    <input type = "text" id = "apellido"
+                    placeholder = "Ingresa tu apellido">
+                </label>
+            </p>
+
+            <p>
+                <label>Email:
+                    <input type = "email" id = "email"
+                    placeholder = "Ingresa tu email">
+                </label>
+            </p>
+
+            <details>
+                <summary>Pregunta opcional</summary>
+                <p>¿Qu&eacute; semestre de universidad cursas?</p>
+                <p><label for="listaGrado">Semestre:
+                    <input type="text" id="listaGrado"
+                    placeholder="Seleccione un semestre" list="semestre" />
+                    <datalist id="semestre">
+                        <option value="Primer semestre">
+                        <option value="Segundo semestre">
+                        <option value="Tercer semestre">
+                        <option value="Cuarto semestre">
+                        <option value="Quinto semestre">
+                        <option value="Sexto semestre">
+                        <option value="S&eacute;ptimo semestre">
+                        <option value="Octavo semestre">
+                        <option value="Noveno semestre">
+                        <option value="Decimo semestre">
+                        <option value="Onceavo semestre">
+                        <option value="Doceavo semestre">   
+                    </datalist> 
+                </p>
+            </details>
+
+            <p>
+                <input type = "submit" value = "Enviar">
+                <input type = "reset" value = "Borrar">
+            </p>
+        </form>
+        <input type="button" onclick="history.back()" name="Menú" value="Menú">
+    </body>
+</html>

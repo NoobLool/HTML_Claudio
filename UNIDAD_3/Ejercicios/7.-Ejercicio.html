@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!--Ejercicio 7-->
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Ejercicio 7</title>
+    </head>
+
+    <body>
+        <h2>Ejercicios de autoevaluaci&oacute;n</h2>
+
+        <p><strong>3.7</strong> <em><strong>(Creaci&oacute;n de un formulario con autocomplete)</strong></em>. Cree un formulario
+        de b&uacute;squeda simple; use un elemento <em>input search</em> en donde el usuario pueda introducir una consulta de b&uacute;squeda. 
+        Use el nevgador Web Firefox para probar el formulario. Escriba Junio y env&iacute;e el formulario. Despu&eacute;s escriba una de J en 
+        el elemento <em>input</em> para ver las entradas anteriores que empiezan con J; deber&aacute; aparecer Junio debajo del elemento <em>input</em>.
+        Escriba <em>Julio</em> y env&iacute;e el formulario de nuevo. Ahora escriba una J en el elemento <em>input</em> para ver las entradas anteriores
+        que empiezan con J: deber&aacute;n aparecer <em>Junio</em> y <em>Julio</em> debajo del elemento <em>input</em>. Pruebe esto con sus propias consultas de b&uacute;squeda tambi&eacute;n.</p>
+        
+        <form method="post" autocomplete="on">
+            <p><label>Buscar:
+                <input type = "search" id = "buscador"
+                placeholder = "Ingrese su consulta">
+                </label>
+            </p>
+
+            <p>
+                <input type = "submit" value = "Enviar">
+                <input type = "reset" value = "Borrar">
+            </p>
+        </form>
+
+        <input type = "button" onclick="history.back()" name = "Menú" value = "Menú">
+
+    </body>
+</html>     

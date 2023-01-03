@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!--Ejercicio 5-->
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Ejercicio 5</title>
+    </head>
+
+    <body>
+        <h2>Ejercicios de autoevaluaci&oacute;n</h2>
+
+        <p><strong>3.5</strong> Escriba un elemento (o elementos) de HTML5 para realizar cada una de las siguientes tareas:</p>
+
+        <p>
+            a) Se pidi&oacute; a los estudiantes que clasificaran los alimentos en la cafeteria, en una escala del 1 al 10.
+            Use un elemento <em>meter</em> con texto a su izquierda y a su derecha para indicar que la calificaci&oacute;n 
+            fue de 7 de 10.<br><br>
+            <strong>Respuesta: </strong> < p >1 < meter min = "1" max = "10" value = "7" >< /meter> 10 < /p>< /meter>
+        </p>
+
+        <p>
+            b) Cree un elemento <em>details</em> que muestre el texto <strong>"Resultados de la encuesta"</strong> en el elemento <em>summary</em>
+            para la parte (a). Cuando el usuario haga clic en la flecha enseguida del texto <em>summary</em>, deber&aacute; aparecer un p&aacute;rrafo 
+            que explique sobre la encuesta.<br><br>
+            <strong>Respuesta: </strong> < details > < summary > Resultados de la encuesta < /summary> < p > La calificaci&oacute;n que se le dio a la cafeteria
+            en la escala del 1 al 10. Fue 7. < /p > < /details >
+        </p>
+
+        <p>
+            c) Cree un elemento <em>input text</em> para el primer nombre. El elemento deber&aacute; recibir el enfoque de manera autom&aacute;tica
+            al momento de desplegar el formulario en un navegadoor. <br><br>
+            <strong>Respuesta: </strong> < p > < label > Nombre: < input type = "text" autofocus /> < /label > < /p >
+        </p>
+
+        <p>
+            d) Modifique la parte (c) de modo que se elimine el elemento <em>label</em> y use texto en un elemento <em>placeholder</em> en el elemento <em>input</em>
+            <br><br>
+            <strong>Respuesta: </strong> < p > < input type = "text" placeholder = "Nombre" autofocus /> < /p >
+        </p>
+
+        <p>
+            e) Use un elemento <em>datalist</em> para promover una lista <em>autocomplete</em> para cinco estados.<br><br>
+            <strong>Respuesta: </strong> < input type = "text" id = "estado" autocomplete = "on" list = "listadeEstados" />
+        </p>
+
+        <p>
+            f) Cree un elemento <em>input range</em> que permita al usuario seleccionar un numero del 1 al 100.<br><br>
+            <strong>Respuesta: </strong><br>
+            
+        </p>
+
+        <p>
+            g) Especifique que no debe permitirse el atributo <em>autocomplete</em> en un formulario. Muestre s&oacute;lo la etiqueta de apertura del formulario<br><br>
+            <strong>Respuesta: </strong> < form action = "post" autocomplete = "off" >
+        </p>
+
+        <p>
+            h) Use un elemento <em>mark</em> para resaltar el segundo enunciado del siguiente parrafo:<br>
+            < p> Se pidi&oacute; a los estudiantes que calificaran los alimentos en la cafeter&iacute;a
+                en una escala del 1 al 10. El resultado promedio fue 7.< /p><br><br>
+            
+            <strong>Respuesta: </strong> < p >Se pidi&oacute; a los estudiantes que calificaran los alimentos en 
+            la cafeter&iacute;a.< mark > En una escala del 1 al 10. El resultado promedio fue 7.< /mark >
+        </p>
+
+        <input type="button" onclick="history.back()" name="Menú" value="Menú">
+
+    </body>
+</html>
